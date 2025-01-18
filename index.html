@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STOPWATCH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stopwatch-container">
+    <div class="stop">
+      STOPWATCH
+    </div>
+    <div class="time-display" id="time-display">
+       00:00:00
+    </div>
+    <div class="stopwatch">
+      <div class="hand" id="hand"></div>
+      <div class="hour-mark"></div>
+      <div class="hour-mark"></div>
+      <div class="hour-mark"></div>
+      <div class="hour-mark"></div>
+      <div class="hour-mark"></div>
+      <div class="hour-label">3</div>
+      <div class="hour-label">6</div>
+      <div class="hour-label">9</div>
+      <div class="hour-label" style="top: 21px; left: 50%; transform: translateX(-50%);">12</div>
+
+    </div>
+    <div class="buttons">
+      <button onclick="startStopwatch()">Start</button>
+      <button onclick="pauseStopwatch()">Pause</button>
+      <button onclick="resetStopwatch()">Reset</button>
+      <button onclick="recordLap()">Lap</button>
+    </div>
+    <div class="lap-times" id="lap-times"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
